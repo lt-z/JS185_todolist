@@ -26,8 +26,6 @@ block main
           form.delete(action=`/lists/${todoList.id}/todos/${todo.id}/destroy`
                       method="post")
             button Delete
-        else
-          h3= todo.title
 
     form(action=`/lists/${todoList.id}/todos` method="post")
       dl
